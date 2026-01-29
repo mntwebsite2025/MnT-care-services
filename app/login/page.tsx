@@ -45,6 +45,21 @@ export default function LoginPage() {
     }
   }, [router])
 
+  const handleDemoLogin = () => {
+    setFormData({
+      email: "admin@MnTcare.com",
+      password: "MnTCare@2025",
+    })
+    
+    // Auto-submit after a brief delay to show the auto-fill
+    setTimeout(() => {
+      const form = document.querySelector('form')
+      if (form) {
+        form.requestSubmit()
+      }
+    }, 300)
+  }
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -197,6 +212,15 @@ export default function LoginPage() {
                 ) : (
                   "Sign In"
                 )}
+              </button>
+
+              <button
+                type="button"
+                onClick={handleDemoLogin}
+                disabled={isLoading}
+                className="w-full bg-secondary text-white font-medium py-3 rounded hover:bg-opacity-90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                Try Demo Login
               </button>
             </form>
 
