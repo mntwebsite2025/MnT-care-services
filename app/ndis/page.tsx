@@ -11,12 +11,12 @@ export default function NdisPage() {
     {
       question: "What is the NDIS?",
       answer:
-        "The National Disability Insurance Scheme (NDIS) is an Australian government initiative that provides funding for disability support services to eligible individuals.",
+        "The National Disability Insurance Scheme (NDIS) is an Indian government initiative that provides funding for disability support services to eligible individuals.",
     },
     {
       question: "How do I know if I'm eligible?",
       answer:
-        "To be eligible for the NDIS, you generally need to be under 65, be an Australian citizen or permanent resident, and have a permanent and significant disability that affects your daily life.",
+        "To be eligible for the NDIS, you generally need to be under 65, be an Indian citizen or permanent resident, and have a permanent and significant disability that affects your daily life.",
     },
     {
       question: "How do I access NDIS funding?",
@@ -52,8 +52,8 @@ export default function NdisPage() {
               <span className="text-primary">THE NDIS</span>
             </h2>
             <p className="text-gray-600 leading-relaxed text-justify">
-              The National Disability Insurance Scheme (NDIS) is a way of providing support for Australians with
-              disability, their families and carers. As a registered NDIS provider, Elegant Care Service is here to help
+              The National Disability Insurance Scheme (NDIS) is a way of providing support for people with
+              disability, their families and carers. As a registered NDIS provider, MnT Care Service is here to help
               you navigate the scheme and access the services you need.
             </p>
           </div>
@@ -65,7 +65,7 @@ export default function NdisPage() {
               </div>
               <h3 className="text-lg font-semibold text-secondary mb-2">Who We Support</h3>
               <p className="text-gray-600 text-sm text-justify">
-                We support NDIS participants of all ages with a wide range of disabilities across South Australia.
+                We support NDIS participants of all ages with a wide range of disabilities across Tamil Nadu.
               </p>
             </div>
 

@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!serviceData) {
     return {
-      title: "Service Not Found - Elegant Care Service",
+      title: "Service Not Found - MnT Care Service",
       description: "The requested service could not be found.",
     };
   }
@@ -72,11 +72,11 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title:
       serviceData.seoTitle ||
-      `${serviceData.serviceName} - Elegant Care Service`,
+      `${serviceData.serviceName} - MnT Care Service`,
     description: serviceData.seoDescription || serviceData.description,
     keywords:
       serviceData.seoKeywords ||
-      `${serviceData.serviceName}, NDIS services, disability support, Elegant Care Service`,
+      `${serviceData.serviceName}, NDIS services, disability support, MnT Care Service`,
   };
 }
 

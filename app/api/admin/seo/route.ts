@@ -11,23 +11,23 @@ export async function GET() {
     let seoData = await SEO.find({}).sort({ lastUpdated: -1 });
     
     if (seoData.length === 0) {
-      // Create default SEO data for Elegant Care Service
+      // Create default SEO data for MnT Care Service
       const defaultSEOData = [
         {
           id: "home",
           pageName: "Home Page",
-          title: "Elegant Care Service - Quality NDIS Support Services in Australia",
-          description: "Elegant Care Service provides compassionate NDIS support services across Australia. Expert care workers, personalized support plans, and 24/7 assistance for people with disabilities.",
-          keywords: "NDIS support services, disability care Australia, support workers, NDIS provider, quality care services, disability support, home care, community access",
+          title: "MnT Care Service - Quality NDIS Support Services",
+          description: "MnT Care Service provides compassionate NDIS support services. Expert care workers, personalized support plans, and 24/7 assistance for people with disabilities.",
+          keywords: "NDIS support services, disability care, support workers, NDIS provider, quality care services, disability support, home care, community access",
           lastUpdated: new Date(),
           isActive: true,
         },
         {
           id: "about",
           pageName: "About Us",
-          title: "About Elegant Care Service - Your Trusted NDIS Support Provider",
-          description: "Learn about Elegant Care Service, a trusted NDIS registered provider offering quality disability support services. Our experienced team is dedicated to empowering individuals with disabilities.",
-          keywords: "about elegant care, NDIS registered provider, disability support team, quality care provider, experienced support workers, trusted NDIS service",
+          title: "About MnT Care Service - Your Trusted NDIS Support Provider",
+          description: "Learn about MnT Care Service, a trusted NDIS registered provider offering quality disability support services. Our experienced team is dedicated to empowering individuals with disabilities.",
+          keywords: "about MnT care, NDIS registered provider, disability support team, quality care provider, experienced support workers, trusted NDIS service",
           lastUpdated: new Date(),
           isActive: true,
         },
@@ -53,7 +53,7 @@ export async function GET() {
           id: "ndis",
           pageName: "NDIS Information",
           title: "NDIS Information - Understanding Your NDIS Plan & Support",
-          description: "Learn about the NDIS, how to access support services, understanding your NDIS plan, and how Elegant Care Service can help you achieve your goals.",
+          description: "Learn about the NDIS, how to access support services, understanding your NDIS plan, and how MnT Care Service can help you achieve your goals.",
           keywords: "NDIS information, NDIS plan, disability support scheme, NDIS access, understanding NDIS, NDIS funding, support coordination",
           lastUpdated: new Date(),
           isActive: true,
@@ -61,7 +61,7 @@ export async function GET() {
         {
           id: "feedback",
           pageName: "Feedback",
-          title: "Feedback - Share Your Experience with Elegant Care Service",
+          title: "Feedback - Share Your Experience with MnT Care Service",
           description: "We value your feedback! Share your compliments, suggestions, or concerns about our NDIS support services. Your input helps us improve and deliver better care.",
           keywords: "feedback, customer feedback, service feedback, NDIS feedback, compliments, suggestions, concerns, service improvement, client feedback",
           lastUpdated: new Date(),
@@ -70,9 +70,9 @@ export async function GET() {
         {
           id: "contact",
           pageName: "Contact Us",
-          title: "Contact Elegant Care Service - Get NDIS Support Today",
-          description: "Contact Elegant Care Service for NDIS support services. Our friendly team is available 24/7 to discuss your care needs and create a personalized support plan.",
-          keywords: "contact elegant care, NDIS inquiry, support services contact, 24/7 care support, NDIS consultation, get support, care inquiry",
+          title: "Contact MnT Care Service - Get NDIS Support Today",
+          description: "Contact MnT Care Service for NDIS support services. Our friendly team is available 24/7 to discuss your care needs and create a personalized support plan.",
+          keywords: "contact MnT care, NDIS inquiry, support services contact, 24/7 care support, NDIS consultation, get support, care inquiry",
           lastUpdated: new Date(),
           isActive: true,
         },
@@ -89,7 +89,7 @@ export async function GET() {
 
       await SEO.bulkWrite(bulkOps);
       seoData = await SEO.find({}).sort({ lastUpdated: -1 });
-      console.log("✅ SEO data initialized for Elegant Care Service");
+      console.log("✅ SEO data initialized for MnT Care Service");
     }
     
     return NextResponse.json({

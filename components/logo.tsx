@@ -20,7 +20,7 @@ export function Logo({ className = "" }: { className?: string }) {
       ) : (
         <Image
           src="/placeholder-logo.png"
-          alt="Elegant Care Service Logo"
+          alt="MnT Care Service Logo"
           width={48}
           height={48}
           className="h-10 w-10 sm:h-12 sm:w-12 object-contain"
@@ -29,7 +29,7 @@ export function Logo({ className = "" }: { className?: string }) {
       )}
       <div className="flex flex-col">
         <span className="text-secondary font-bold text-base sm:text-lg leading-tight">
-          {settings?.siteName?.split(" ")[0] || "Elegant"}
+          {settings?.siteName?.split(" ")[0] || "MnT"}
         </span>
         <span className="text-primary font-bold text-base sm:text-lg leading-tight">
           {settings?.siteName?.split(" ").slice(1).join(" ") || "Care Service"}

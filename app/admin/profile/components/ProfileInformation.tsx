@@ -310,7 +310,7 @@ export default function ProfileInformation() {
                 setProfileData({ ...profileData, location: e.target.value })
               }
               className="mt-2"
-              placeholder="Melbourne, Victoria, Australia"
+              placeholder="India"
             />
           </div>
         </div>

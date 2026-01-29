@@ -317,7 +317,7 @@ export default function ViewLead({ lead, isOpen, onClose }: ViewLeadProps) {
               {lead.status === "completed" && lead.reviewLink && lead.phone && (
                 <Button
                   onClick={() => {
-                    const reviewMessage = `Hi ${lead.firstName}, thank you for choosing Elegant Care Service! We hope you had a great experience with our ${lead.subject} service.\n\nPlease take a moment to share your feedback: ${lead.reviewLink}\n\nYour feedback helps us serve you better! 🙏`;
+                    const reviewMessage = `Hi ${lead.firstName}, thank you for choosing MnT Care Service! We hope you had a great experience with our ${lead.subject} service.\n\nPlease take a moment to share your feedback: ${lead.reviewLink}\n\nYour feedback helps us serve you better! 🙏`;
                     window.open(`https://wa.me/${lead.phone.replace(/[^0-9]/g, '')}?text=${encodeURIComponent(reviewMessage)}`);
                   }}
                   className="bg-primary hover:bg-[#7AB82F] text-white"

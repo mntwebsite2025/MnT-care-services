@@ -52,7 +52,7 @@ export const sendTestEmail = async (smtpConfig, testEmailData) => {
     const mailOptions = {
       from: `"${smtpConfig.fromName}" <${smtpConfig.fromEmail}>`,
       to: testEmailData.email,
-      subject: 'SMTP Test Email - Elegant Care Service',
+      subject: 'SMTP Test Email - MnT Care Service',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <h2 style="color: primary;">SMTP Test Email</h2>
@@ -62,12 +62,12 @@ export const sendTestEmail = async (smtpConfig, testEmailData) => {
             ${testEmailData.message}
           </div>
           <p style="color: #6b7280; font-size: 14px;">
-            This is a test email sent from Elegant Care Service admin panel to verify SMTP configuration.
+            This is a test email sent from MnT Care Service admin panel to verify SMTP configuration.
           </p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;">
           <p style="color: #9ca3af; font-size: 12px;">
             Sent at: ${new Date().toLocaleString()}<br>
-            From: Elegant Care Service Admin Panel
+            From: MnT Care Service Admin Panel
           </p>
         </div>
       `

@@ -31,7 +31,7 @@ export function AboutContent() {
                 <span className="text-primary">STORY</span>
               </h2>
               <p className="text-gray-600 leading-relaxed mb-4 text-justify">
-                Elegant Care Service was founded with a simple yet powerful vision: to provide
+                MnT Care Service was founded with a simple yet powerful vision: to provide
                 <strong className="text-secondary"> person-centered disability support services</strong> that truly make
                 a difference in people's lives.
               </p>
@@ -42,8 +42,8 @@ export function AboutContent() {
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
                 We have extended our services across Adelaide, Adelaide Hills, Mount Barker, Riverland region, Renmark,
-                Mildura, and Murray region, bringing quality disability support to communities throughout South
-                Australia.
+                Mildura, and Murray region, bringing quality disability support to communities throughout
+                India.
               </p>
             </div>
           </div>

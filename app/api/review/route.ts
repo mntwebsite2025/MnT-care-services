@@ -104,7 +104,7 @@ export async function POST(request: NextRequest) {
     // Create testimonial
     const testimonialData = {
       name: `${lead.firstName} ${lead.lastName}`,
-      location: location || "Australia",
+      location: location || "India",
       content: content.trim(),
       rating: ratingNum,
       serviceType: serviceType || lead.subject || "NDIS Support",

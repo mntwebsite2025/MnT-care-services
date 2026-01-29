@@ -64,7 +64,7 @@ export async function generateMetadata({ params }: PageProps) {
 
   if (!supportModelData) {
     return {
-      title: "Support Model Not Found - Elegant Care Service",
+      title: "Support Model Not Found - MnT Care Service",
       description: "The requested support model could not be found.",
     };
   }
@@ -72,11 +72,11 @@ export async function generateMetadata({ params }: PageProps) {
   return {
     title:
       supportModelData.seoTitle ||
-      `${supportModelData.title} - Elegant Care Service`,
+      `${supportModelData.title} - MnT Care Service`,
     description: supportModelData.seoDescription || supportModelData.description,
     keywords:
       supportModelData.seoKeywords ||
-      `${supportModelData.title}, NDIS support, disability support, Elegant Care Service`,
+      `${supportModelData.title}, NDIS support, disability support, MnT Care Service`,
   };
 }
 

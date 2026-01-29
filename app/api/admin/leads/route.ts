@@ -119,7 +119,7 @@ export async function PUT(request: NextRequest) {
     if (updateData.status === "completed" && currentLead.status !== "completed") {
       // Generate a unique review token
       const reviewToken = `review_${_id}_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`;
-      const appUrl = process.env.APP_URL || 'https://elegantcare.com.au';
+      const appUrl = process.env.APP_URL || 'https://MnTcare.com.au';
       const reviewLink = `${appUrl}/review?token=${reviewToken}`;
       
       updateData.reviewToken = reviewToken;

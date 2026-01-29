@@ -8,8 +8,8 @@ import { AboutContent } from "@/components/About/AboutContent"
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: 'About Us | Elegant Care Service',
-  description: 'Learn about our mission, values, and dedication to providing exceptional NDIS disability support services in Australia.',
+  title: 'About Us | MnT Care Service',
+  description: 'Learn about our mission, values, and dedication to providing exceptional NDIS disability support services.',
   keywords: 'about us, NDIS provider, disability support, mission, values'
 }
 

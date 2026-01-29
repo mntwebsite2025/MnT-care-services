@@ -172,23 +172,23 @@ adminSchema.statics.findByCredentials = async function (email, password) {
 // Static method to create initial admin
 adminSchema.statics.createInitialAdmin = async function () {
   try {
-    const existingAdmin = await this.findOne({ email: "admin@elegantcare.com" })
+    const existingAdmin = await this.findOne({ email: "admin@MnTcare.com" })
 
     if (!existingAdmin) {
       const initialAdmin = new this({
-        firstName: "Elegant",
+        firstName: "MnT",
         lastName: "Care Admin",
-        email: "admin@elegantcare.com",
-        password: "ElegantCare@2025",
+        email: "admin@MnTcare.com",
+        password: "MnTCare@2025",
         phone: "+61 XXX XXX XXX",
-        location: "Australia",
+        location: "India",
         role: "Super Admin",
         emailVerified: true,
         isActive: true,
       })
 
       await initialAdmin.save()
-      console.log("Initial admin created successfully for Elegant Care Service")
+      console.log("Initial admin created successfully for MnT Care Service")
       return initialAdmin
     } else {
       console.log("Initial admin already exists")

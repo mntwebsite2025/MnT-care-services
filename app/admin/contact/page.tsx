@@ -253,7 +253,7 @@ export default function ContactPage() {
                 type="email"
                 value={contactInfo.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
-                placeholder="info@elegantcare.com.au"
+                placeholder="info@MnTcare.com.au"
                 className="mt-2"
               />
             </div>
@@ -347,7 +347,7 @@ export default function ContactPage() {
                   id="country"
                   value={contactInfo.country}
                   onChange={(e) => handleInputChange("country", e.target.value)}
-                  placeholder="Australia"
+                  placeholder="India"
                   className="mt-2"
                 />
               </div>
@@ -379,7 +379,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     handleInputChange("facebook", e.target.value)
                   }
-                  placeholder="https://facebook.com/elegantcare"
+                  placeholder="https://facebook.com/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -395,7 +395,7 @@ export default function ContactPage() {
                   id="twitter"
                   value={contactInfo.twitter}
                   onChange={(e) => handleInputChange("twitter", e.target.value)}
-                  placeholder="https://twitter.com/elegantcare"
+                  placeholder="https://twitter.com/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -413,7 +413,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     handleInputChange("linkedin", e.target.value)
                   }
-                  placeholder="https://linkedin.com/company/elegantcare"
+                  placeholder="https://linkedin.com/company/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -431,7 +431,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     handleInputChange("instagram", e.target.value)
                   }
-                  placeholder="https://instagram.com/elegantcare"
+                  placeholder="https://instagram.com/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -447,7 +447,7 @@ export default function ContactPage() {
                   id="youtube"
                   value={contactInfo.youtube}
                   onChange={(e) => handleInputChange("youtube", e.target.value)}
-                  placeholder="https://youtube.com/c/elegantcare"
+                  placeholder="https://youtube.com/c/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -483,7 +483,7 @@ export default function ContactPage() {
                   onChange={(e) =>
                     handleInputChange("telegram", e.target.value)
                   }
-                  placeholder="https://t.me/elegantcare"
+                  placeholder="https://t.me/MnTcare"
                   className="mt-2"
                 />
               </div>
@@ -571,7 +571,7 @@ export default function ContactPage() {
                 id="pageTitle"
                 value={contactInfo.pageTitle}
                 onChange={(e) => handleInputChange("pageTitle", e.target.value)}
-                placeholder="Get in Touch with Elegant Care Service"
+                placeholder="Get in Touch with MnT Care Service"
                 className="mt-2"
               />
             </div>

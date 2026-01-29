@@ -310,7 +310,7 @@ export default function LeadManager() {
     const url = window.URL.createObjectURL(blob)
     const a = document.createElement("a")
     a.href = url
-    a.download = `elegant-care-leads-${new Date().toISOString().split('T')[0]}.csv`
+    a.download = `MnT-care-leads-${new Date().toISOString().split('T')[0]}.csv`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
@@ -331,7 +331,7 @@ export default function LeadManager() {
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <div>
           <h1 className="text-3xl font-bold text-secondary">Lead Manager</h1>
-          <p className="text-gray-600 mt-1">Manage enquiries and potential clients for Elegant Care</p>
+          <p className="text-gray-600 mt-1">Manage enquiries and potential clients for MnT Care</p>
         </div>
         <div className="flex gap-3">
           <Button onClick={handleExportCSV} variant="outline">
